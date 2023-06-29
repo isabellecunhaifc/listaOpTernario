@@ -12,7 +12,7 @@
 
     //Processamento
     const conta = preço * litro;
-    let mensagemFinal = (conta > tp) ? `O meio de transporte mais barato é o transporte público. Custará R$${(tp * 2).toFixed(2)} para ir e voltar.`
+    let mensagemFinal = (conta > tp) ? `O meio de transporte mais barato é o transporte público. Custará R$${(tp * 2).toFixed(2)} para ir e voltar`
     : (tp > conta) ? `O meio de transporte mais barato é o carro. Custará R$${(conta * 2).toFixed(2)} para ir e voltar.`
     : `Os dois meios de transportes dão o mesmo valor (R$${(tp * 2).toFixed(2)} para ir e voltar.)`;
     
