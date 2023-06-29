@@ -8,11 +8,15 @@
     // Apresente o salário final recebido pelo funcionário semanalmente e o preço de cada hora trabalhada.
 
     //Entrada
-
+    const horas = parseInt(prompt("Informe a quantidade de horas trabalhadas semanalmente:"));
+    const salario = parseInt(prompt("Informe quanto recebe por hora trabalhada:").replace(",", "."));
 
     //Processamento
-
+    const conta = salario * horas;
+    let mensagemFinal = (horas <= 45) ? `Não haverá adicional em seu salário. Continuará com R$${conta}`
+    : (horas <= 60) ? `Haverá adicional de 20% em seu salário. Ficará R$${(conta * 20/100) + conta}`
+    : `Haverá adicional de 30%. Ficará R$${(conta * 30/100) + conta}`;
     
     //Saída
-
+    document.write(mensagemFinal)
 </script>

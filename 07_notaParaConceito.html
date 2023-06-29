@@ -10,11 +10,16 @@
     // Entre 5.9 e zero            E
 
     //Entrada
-
+    const nota = parseInt(prompt("Informe sua nota").replace(",", "."));
 
     //Processamento
-
+    let mensagemFinal = (nota >= 9 && nota <= 10) ? "Sua nota foi A"
+    : (nota >= 8) ? "Sua nota foi B"
+    : (nota >= 7) ? "Sua nota foi C"
+    : (nota >= 6) ? "Sua nota foi D"
+    : (nota > 10) ? "Valor inválido"
+    : "Sua nota foi E";
     
     //Saída
-
+    document.write(mensagemFinal)
 </script>

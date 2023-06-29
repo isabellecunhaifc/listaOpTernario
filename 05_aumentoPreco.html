@@ -8,11 +8,14 @@
         //- acima de 1500: aumento de 5 %
     
     //Entrada
-
+    const preço = parseInt(prompt("Informe o preço do produto:").replace(",", "."));
 
     //Processamento
-
+    let mensagemFinal = (preço <= 280) ? `Com o aumento do preço o produto fica R$${(preço * 20/100) + preço}`
+    :(preço <= 700) ? `Com o aumento do preço o produto fica R$${(preço * 15/100) + preço}`
+    :(preço <= 1500) ? `Com o aumento o preço fica R$${(preço * 10/100) + preço}`
+    : `Com o aumento o preço fica R$${(preço * 5/100) + preço}`;
     
     //Saída
-
+    document.write(mensagemFinal);
 </script>
